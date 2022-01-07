@@ -1,0 +1,17 @@
+{
+  "name": "select-project",
+  "source": "index.html",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "devDependencies": {
+    "parcel": "latest",
+    "postcss": "^8.4.5",
+    "sass": "^1.46.0"
+  },
+  "dependencies": {
+    "cssnano": "^5.0.14"
+  }
+}

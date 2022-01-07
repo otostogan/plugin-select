@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.app {
+  padding-top: 5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.wrapp {
+  width: 500px;
+}
+
+.select {
+  z-index: 100;
+  width: 100%;
+  position: relative;
+}
+.select.open .select__dropdown {
+  display: block;
+}
+.select.open .select__input {
+  border-bottom: none;
+}
+.select.open .select__backdrop {
+  display: block;
+}
+.select__input {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  padding: 0px 1rem;
+}
+.select__dropdown {
+  display: none;
+  position: absolute;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  top: 45px;
+  left: 0;
+  right: 0;
+  max-height: 200px;
+  overflow-y: auto;
+  box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.3);
+}
+.select__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.select__item {
+  padding: 1rem;
+  border-bottom: 1px solid #ccc;
+}
+.select__item:hover {
+  background-color: #eee;
+  cursor: pointer;
+  transition: 0.15s background-color ease-in;
+}
+.select__item.selected {
+  background-color: bisque;
+}
+.select__backdrop {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  z-index: -1;
+  display: none;
+}
+
+/*# sourceMappingURL=/plugin-select.9d416ccf.css.map */
